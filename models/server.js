@@ -10,9 +10,20 @@ class Server {
     //     //Rutas de la aplicacion
     //     this.routes();
     // }
-    constructor() {
+    // constructor() {
+    //     this.app = express();
+    //     this.port = process.env.PORT;
+    //     this.usuariosPath = '/api/usuarios';
+    //     //Middelware
+    //     this.middlewares();
+    //     //Rutas de la aplicacion
+    //     this.routes();
+        
+
+    // }
+constructor() {
         this.app = express();
-        this.port = process.env.PORT;
+        this.port = process.env.PORT || 3000;
         this.usuariosPath = '/api/usuarios';
         //Middelware
         this.middlewares();
